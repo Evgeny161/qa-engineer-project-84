@@ -4,7 +4,7 @@
    requirement: |
     При выборе категории пользователь видит все  товары из выбранной категории
    prerequisites: |
-    Перейти на страницу сайта "hexlet Store" по ссылке https://hexlet-products-store.vercel.app/
+    Перейти на страницу сайта  https://hexlet-products-store.vercel.app/
    test-data: |
     категория = smartphones
    steps:
