@@ -7,6 +7,10 @@
   status: pass
   
 - summary: |
+     Возможность искать товары по ключевому слову.
+    status: fail 
+  
+- summary: |
     Фильтр  товаров по производителю 
   status: pass
     
