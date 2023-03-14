@@ -1,4 +1,5 @@
 ---
+test-cases:
 - summary: |
     Возможность искать товары по категории.
   status: pass
