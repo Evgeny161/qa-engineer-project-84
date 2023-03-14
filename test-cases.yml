@@ -37,7 +37,7 @@
     - Использовать checkbox "Brand" выбираем производителя "Apple"
   expected-result: |
     На экране отображены  товары "Apple"
-- summary: >
+- summary: |
     Выбор товаров по нескольким характеристикам одновременно 
 
     requirement: |
