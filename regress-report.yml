@@ -57,7 +57,7 @@ test-cases:
     status: fail
     
     
- bugreports:
+bugreports:
    - summary: |
       Не работает поиск по сайту
      environment: |
