@@ -66,7 +66,7 @@
   requirement: |
     Клик по ячейке товара открывает карточку товара с подробным описанием
   prerequisites: |
-    Открыта страница магазина https://hexlet-products-store.vercel.app/.
+    Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     iPhone 9
   steps:
@@ -82,10 +82,10 @@
     Перейти на страницу https://hexlet-products-store.vercel.app/
   test-data: |
     Товар iPhone X
-  steps: - Найти на главной странице ячейку товара iPhone X
-    - Нажать на  ячейку товара
-    - Нажать на кнопку Добавить в корзину карточке  товара
-    - Нажать на кнопку Карзина  правой части хедера
+  steps: 
+    - Найти на главной странице ячейку товара iPhone X
+    - Нажать на кнопку в корзину
+    - Нажать на кнопку Карзина  
   expected-result: |
     Отображена веб-страница корзины с выбранным товаром iPhone X в
     количестве 1 единица
@@ -114,7 +114,7 @@
     При входе в корзину пользователь видит все выбранные товары.
   prerequisites: |
     Открыта страница магазина. https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: |
   steps:
     - нажать кнопку Корзина в правой части хедера
   expected-result: |
