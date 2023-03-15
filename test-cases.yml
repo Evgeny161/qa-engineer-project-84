@@ -6,7 +6,7 @@
   prerequisites: |
     Перейти на страницу сайта  https://hexlet-products-store.vercel.app/
   test-data: |
-    категория = smartphones
+    smartphones
   steps:
     - Открыть список категорий
     - Выбрать категорию
@@ -19,12 +19,13 @@
   prerequisites: |
     Открыта страница магазина  https://hexlet-products-store.vercel.app/
   test-data: |
-    1-5000
+    100-500
   steps:
     - Выбрать минимальную цену
     - Выбрать максимальную цену
   expected-result: |
     На странице должны появиться товары из выбранного ценового диапазона
+    
 - summary: |
     Фильтр  товаров по производителю 
   requirement: |
@@ -93,7 +94,7 @@
     При входе в корзину пользователь видит все выбранные товары.
   prerequisites: |
     Открыта страница магазина. https://hexlet-products-store.vercel.app/
-  test-data: ""
+  test-data: 
   steps:
     - нажать кнопку Корзина в правой части хедера
   expected-result: |
