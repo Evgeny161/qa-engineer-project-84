@@ -6,16 +6,19 @@
   prerequisites: |
     Перейти на страницу сайта  https://hexlet-products-store.vercel.app/
   test-data: |
-    категория = smartphones
     smartphones
   steps:
     - Открыть список категорий
     - Выбрать категорию
-@@ -19,12 +19,13 @@
+  expected-result: |
+    На странице должны появиться товары из выбранной категории
+- summary: |
+    Возможность фильтровать товары по цене.
+  requirement: |
+    При выборе цены пользователь видит товары соотвевенной цены.
   prerequisites: |
     Открыта страница магазина  https://hexlet-products-store.vercel.app/
   test-data: |
-    1-5000
     100-500
   steps:
     - Выбрать минимальную цену
@@ -26,11 +29,70 @@
 - summary: |
     Фильтр  товаров по производителю 
   requirement: |
-@@ -93,7 +94,7 @@
+    При выборе бренда пользователь видит все  товары из выбранной категории
+  prerequisites: |
+    Перейти на страницу https://hexlet-products-store.vercel.app/
+  test-data: |
+    Brand Apple
+  steps:
+    - Использовать checkbox Brand выбираем производителя Apple
+  expected-result: |
+    На экране отображены  товары Apple
+- summary: |
+    Выбор товаров по нескольким характеристикам одновременно 
+  requirement: >
+    
+    Пользователь может выбирать товары по нескольким  характеристикам товара одновременно. 
+  prerequisites: |
+    Перейти на страницу https://hexlet-products-store.vercel.app/
+  test-data: |
+    Category smartphones
+    Brand Apple
+    Числовое поле Цена from 737
+    Поисковая строка iphone
+  steps:
+    - В select Category выбираем категорию smartphones
+    - В checkbox Brand выбираем производителя Apple
+    - В числовом поле Цена выставляем цену товара в поле from 300
+    - В поисковую строку вводим iphone
+  expected-result: |
+    На экране отображена ячейка товара iPhone
+- summary: |
+    Возможность просматривать подробную информацию о товаре.
+  requirement: |
+    Клик по ячейке товара открывает карточку товара с подробным описанием
+  prerequisites: |
+    Открыта страница магазина https://hexlet-products-store.vercel.app/
+  test-data: |
+    iPhone 9
+  steps:
+    - 1 клик на выбранный товар
+  expected-result: |
+    Открывается карточка товара с подробной информацией.
+    
+    
+- summary: |
+    Покупка товара
+  requirement: |
+    Успешная покупка выбранных товаров
+  prerequisites: |
+    Открыт сайт https://hexlet-products-store.vercel.app/
+  test-data: |  
+   "iPhone 9"
+  steps: 
+  - Найти на странице товар "iPhone 9"
+  - Нажать на кнопку "Add to cart"
+  - Нажать на кнопку "Cart"
+  - Нажать кнопку "Checkout"
+  expected-result: |
+   Все товары добавлены в корзину, отображены на странице корзины, отображено сообщение об успешной покупке.    
+    
+- summary: |
+    Возможность просматривать содержимое корзины.
+  requirement: |
     При входе в корзину пользователь видит все выбранные товары.
   prerequisites: |
     Открыта страница магазина. https://hexlet-products-store.vercel.app/
-  test-data: ""
   test-data: 
   steps:
     - нажать кнопку Корзина в правой части хедера
@@ -45,7 +107,7 @@
   prerequisites: |
     
     Открыта страница магазина.
-  test-data: | empty 
+  test-data: |
     
     - iPhone X
   steps:
