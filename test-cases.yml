@@ -93,7 +93,7 @@
     При входе в корзину пользователь видит все выбранные товары.
   prerequisites: |
     Открыта страница магазина. https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: empty
   steps:
     - нажать кнопку Корзина в правой части хедера
   expected-result: |
