@@ -58,20 +58,7 @@ test-cases:
     
     
 bugreports:
-   - summary: |
-      Не работает поиск по сайту
-     environment: |
-      Яндекс Браузер 23.1.0.2947 (64 бит)
-      ОС Windows 10
-     steps-to-reproduce: >
-      1. Зайти на главную страницу магазина
-      https://hexlet-products-store.vercel.app/
 
-      2. В поисковую строку вводим  Samsung 
-     expected-result: |
-      Страница с искомым товаром 
-     actual-result: |
-      Отбражается страница каталога. 
    - summary: |
       Нет фильтра по цветам.
      environment: |
